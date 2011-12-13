@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project Portfolio</title>
+    <meta name="description" content="ITP individual project portfolio">
+    <meta name="author" content="Meghan Hoke, Greg Dorsainville, Tom Igoe, ITP, Understanding Networks ">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap_edit.css" >    
+    <link rel="stylesheet" type="text/css" href="css/bebas.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" >
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js" type="text/javascript"></script>
+    <script src="scripts/portfolio.js" type="text/javascript"></script>
+
+	<style type="text/css">
+	.thumbnail{
+	background-size: 100%;
+	width: 400px;
+	overflow: hidden;
+	}
+
+	.thumbnail img{
+	width:100%;
+	}
+	
+	ul, ol {
+	margin:0;
+	}
+	
+	ul {
+	overflow: visible;
+	}
+	
+	.sidebar li {
+	width: 150px;
+	height: 51px;
+	}	
+	
+	.well li {
+	margin: 10px 0 0 10px;
+	}
+	
+	.well img {
+	width:100px;
+	
+	}
+	</style>
+
+</head>
+<body>
+    <div class="topbar">
+        <div id="header">
+            <div id="header-pat">
+                <div id="header-top">
+                    <div class="_topbar-inner">
+                        <div class="container-fluid">
+                            <h1 class="bebas" href="#">{:name:}</h1>
+                            <ul class="nav" style="float:right;">
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end of header -->
+						<!-- side bar with other media -->
+    <div class="container-fluid">
+        <div class="sidebar">
+            <div class="well">
+                {:media:}
+              </div>
+        </div>
+        <div class="content">
+						<!-- information about project -->
+            <div class="hero-unit">
+            <h1 style="color: #1DCAC0;">{:title:}</h1>
+                <ul class="media-grid">
+                    <li><a href="#"><img class="thumbnail" src="{:visual:}" alt="project-picture"></a></li>  
+                </ul>
+				<h2>{:abstract:} </h2>
+				<p>{:description:}</p>
+				<a href="{:url:}"></a>
+				<p>{:venue:}</p>	<p>{:course:}</p>
+            </div><!-- Example row of columns -->
+            <footer>
+                <p> ITP Understanding Networks 2011</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
